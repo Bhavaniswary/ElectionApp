@@ -11,3 +11,7 @@ function login() {
     return false;
   }
 }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js');
+}
